@@ -37,7 +37,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成实体类地址 -->
-        <javaModelGenerator targetPackage="com.clawhub.houserenting.main.entity"
+        <javaModelGenerator targetPackage="com.clawhub.crm.entity"
                             targetProject="./src/main/java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="false"/>
@@ -50,14 +50,13 @@
         </sqlMapGenerator>
 
         <!-- 生成mapxml对应client，也就是接口dao -->
-        <javaClientGenerator targetPackage="com.clawhub.houserenting.main.mapper"
+        <javaClientGenerator targetPackage="com.clawhub.crm.mapper"
                              targetProject="./src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <table tableName="t_people" domainObjectName="People" enableCountByExample="false"
+        <table tableName="t_department" domainObjectName="Department" enableCountByExample="false"
                enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
-
     </context>
 </generatorConfiguration>
